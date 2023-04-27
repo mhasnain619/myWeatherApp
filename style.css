@@ -1,0 +1,158 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container {
+    width: 400px;
+    height: min-content;
+    background-color: white;
+    border-radius: 12px;
+    padding: 28px;
+}
+
+/* ............search-box......... */
+
+.search-box {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box input {
+    width: 84%;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: skyblue;
+    color: black;
+    padding: 12px 16px;
+    border-radius: 14px;
+}
+
+.search-box input::placeholder {
+    color: black;
+}
+
+.search-box button {
+    width: 46px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: azure;
+    font-size: 20px;
+    height: 46px;
+}
+
+.search-box button:hover {
+    background-color: rgb(215, 213, 213);
+    color: white;
+}
+
+/* ............location-not-found....... */
+
+.location-not-found {
+    margin-top: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.location-not-found img {
+    width: 80%;
+}
+
+.location-not-found h1 {
+    font-size: 20px;
+    color: rgb(129, 128, 128);
+    margin-block-end: 15px;
+}
+
+/* .............weather-body................. */
+
+.weather-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 20px;
+}
+
+.weather-body img {
+    width: 60%;
+}
+
+/* ...........weather-box,Temp,cityName,Description......... */
+
+.weather-box {
+    margin-block: 20px;
+    text-align: center;
+}
+
+.weather-box .temperature {
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+}
+
+.weather-box .temperature sup {
+    font-size: 20px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.weather-box .description {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+/* ..........weather-detail......... */
+
+.weather-detail {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.humidity,
+.wind {
+    display: flex;
+    align-items: center;
+}
+
+.humidity {
+    margin-left: 20px;
+}
+
+.wind {
+    margin-right: 20px;
+}
+
+.weather-detail i {
+    font-size: 36px;
+}
+
+.weather-detail .text {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.text span {
+    font-size: 20px;
+    font-weight: 700;
+}
