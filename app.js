@@ -28,7 +28,6 @@ async function cheackweather(city) {
     description.innerHTML = `${weather_data.weather[0].description}`;
     humidity.innerHTML = `${weather_data.main.humidity}%`
     wind_speed.innerHTML = `${weather_data.wind.speed}km/H`
-    console.log(weather_data)
     switch (weather_data.weather[0].main) {
         case 'Clouds':
             weather_image.src = "./images/cloud.png";
@@ -45,8 +44,8 @@ async function cheackweather(city) {
         case 'Snow':
             weather_image.src = "./images/snow.png";
             break;
-        case 'Smoke':
-            weather_data.src = "./images/smokein"
+        case 'Haze':
+            weather_image.src = "./images/haze.png";
             break;
 
     }

@@ -51,14 +51,9 @@ body {
     width: 46px;
     border-radius: 50%;
     cursor: pointer;
-    background-color: azure;
+    background-color: rgb(107, 232, 232);
     font-size: 20px;
     height: 46px;
-}
-
-.search-box button:hover {
-    background-color: rgb(215, 213, 213);
-    color: white;
 }
 
 /* ............location-not-found....... */
